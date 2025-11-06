@@ -3,7 +3,7 @@ package rivesal.Jour2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ex7 {
+public class ex8 {
     public static void main(String[] args) {
         Scanner sword=new Scanner(System.in);
         ArrayList<String> sMot =new ArrayList<>();
