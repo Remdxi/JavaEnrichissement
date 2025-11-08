@@ -1,5 +1,3 @@
-package rivesal.Jour2;
-
 public class StringReversal {
     public static String reverseString(String str) {
         StringBuilder sb = new StringBuilder(str);

@@ -1,4 +1,4 @@
-package rivesal.Jour2;
+
 
 import java.util.Scanner;
 

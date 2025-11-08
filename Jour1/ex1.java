@@ -1,4 +1,4 @@
-package rivesal.Jour1;
+
 public class ex1
 
  

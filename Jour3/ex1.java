@@ -1,4 +1,3 @@
-package rivesal.Jour3;
 //tableau
 public class ex1 {
     public static void main(String[] args) {
