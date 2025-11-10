@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.print.DocFlavor.STRING;
-
 public class TP1 {
     public static void main(String[] args) {
         //SCANNER POUR LES CHOIX
@@ -49,6 +47,7 @@ Exemple : Si j’ai 188,88$, je reçois en monnaie le montant suivant:
  
 */
     //MÉTHODE SI sChoix ÉGALE 1
+    //JE SAIS QUE C'EST INCROYABLEMENT LONG MAIS JE VOULAIS VOIR SI SA PRENDRAITBEACOUPS OU PEU DE TEMPS QUAND MÊME
     public static String jeuxargent(double dPrix) {
         double B100=100;double B50=50;double B20=20;double B10=10;double B5=5; double B2=2;int B1=1;double b25=0.25;double b10=0.10;double b5=0.05;double b1=0.01;
         //COMPTEUR DE BILLET
@@ -98,7 +97,7 @@ Exemple : Si j’ai 188,88$, je reçois en monnaie le montant suivant:
 
         while (dPrix>=b10) {
             dPrix-=0.10;
-            cpt010++;
+            cpt01++;
         }
 
         while (dPrix>=b5) {
