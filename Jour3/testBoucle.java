@@ -1,5 +1,5 @@
 import java.util.Random;
-
+//je voulais juster tester une boucle d'insertion&affichage sur un tableau 2d
 public class testBoucle {
     public static void main(String[] args) {
         int[][] tbl=new int[10][3];

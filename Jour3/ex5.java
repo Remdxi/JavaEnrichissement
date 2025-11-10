@@ -8,5 +8,8 @@ public class ex5 {
             int randomint = random.nextInt(0,100);
             tbl[i]= randomint;
        }
+       //for(int i=0;i<.length;i++){//version corriger
+        //    [(.length-1)-i]=[i];
+      // }
     }
 }
