@@ -17,7 +17,9 @@ public class TP1 {
         System.err.println();
         System.out.println("Choix : ");
         iChoix=scan.nextInt();
-        
+        //appeler la deuxieme methode je ne crois pasque ce soit necessaire de faire ca
+        int iGuess = 7;//(int) Math.floor(Math.random()*20);
+        int iCPT=0;
         //BOUCLE DE VÉRIFICATION
         do {
             System.out.println("Veuiller entrer un nombre valide(1-2-3)");
@@ -30,7 +32,14 @@ public class TP1 {
                 System.out.println(jeuxargent(dPrix));
                 break;
             case 2:
-                System.out.println();
+                while (iCPT<7) {
+                   System.out.println("Essayer de deviner le nombre qui se situe entre 0-20"); 
+                   int iRp;
+                   iRp=sChiffre.nextInt();
+                   if (iRp==iGuess) {
+                    System.out.println(jeuxrandom(iGuess));
+                   } 
+                }
                 break;
             case 3:
                 break;
@@ -53,7 +62,8 @@ Exemple : Si j’ai 188,88$, je reçois en monnaie le montant suivant:
         //COMPTEUR DE BILLET
         int cpt100=0;int cpt50=0;int cpt20=0;int cpt10=0;int cpt5=0;int cpt2=0;int cpt1=0;int cpt025=0;int cpt01=0;int cpt010=0;int cpt005=0;int cpt001=0;
         //TESTER UNE SEUL BOUCLE WHILE AVEC TOUS LES PRERQUIS
-        //TESTER LA MÉTHOD QUI DEMANDE UN TABLEAU
+        //QUI DEMANDE UN TABLEAU
+
         //billet de 100
         while (dPrix>=B100) {
             dPrix-=100;
@@ -123,5 +133,16 @@ Exemple : Si j’ai 188,88$, je reçois en monnaie le montant suivant:
         cpt001+" pièces de 0.01 ";
         return sFin;
     }
-    
+    public static String jeuxrandom(int iGuess) {
+        /*Vous devez créer un jeu qui permet de trouver un nombre mystère entier entre 1 et 20. L’ordinateur va choisir un nombre aléatoire et vous devez trouver ce nombre. Vous avez 7 chances pour trouver ce nombre. 
+
+        À chaque chance, vous affichez un message à l’écran qui dit si votre nombre est plus petit ou plus grand que le nombre mystère. 
+
+        Le programme s’arrête dès que vous avez trouvé le nombre. Vous affichez un message à l’écran qui dit si vous l’avez trouvé ou non.
+
+        Votre nombre mystère se calcule de la façon suivante : (int)(Math.random()*NombreMax)
+        */
+        String sReponse="Votre chiffre etait le "+iGuess;
+        return sReponse;
+    }
 }
