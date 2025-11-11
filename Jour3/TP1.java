@@ -18,7 +18,7 @@ public class TP1 {
         System.out.println("Choix : ");
         iChoix=scan.nextInt();
         //appeler la deuxieme methode je ne crois pasque ce soit necessaire de faire ca
-        int iGuess = 7;//(int) Math.floor(Math.random()*20);
+        int iGuess = (int) Math.floor(Math.random()*20);
         int iCPT=0;
         //BOUCLE DE VÉRIFICATION
         do {
@@ -32,13 +32,14 @@ public class TP1 {
                 System.out.println(jeuxargent(dPrix));
                 break;
             case 2:
-                while (iCPT<7) {
+                while (iCPT<=7) {
                    System.out.println("Essayer de deviner le nombre qui se situe entre 0-20"); 
                    int iRp;
                    iRp=sChiffre.nextInt();
                    if (iRp==iGuess) {
                     System.out.println(jeuxrandom(iGuess));
-                   } 
+                   }
+                   System.out.println("Bien essayer, votre chiffre etait le "+iGuess);
                 }
                 break;
             case 3:
